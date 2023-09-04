@@ -5,29 +5,26 @@
     <title>Browser Object Model</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/"></script>
-    <script defer src="js/bom.js"></script>
+    <!-- <script defer src="js/conectividad.js"></script> -->
 </head>
 <body>
-
-    <h1>Browser Object Model</h1>
-    <h2>Mapas estáticos</h2>
-    <p></p>
-    <div id="mapa">
-
-    </div>
+    <h1>Conectividad a Internet</h1>
+    <h2>Formulario de contacto</h2>
+    <form action="#" autocomplete="off">
+        <input type="text" id="inputNombre" placeholder="Ingresa tu nombre">
+        <input type="email" id="inputEmail" placeholder="Ingresa tu correo electrónico">
+        <input type="date" id="inputFecha" placeholder="Ingresa Fecha de nacimiento">
+        <textarea placeholder="Comentarios" id="inputCom"></textarea>
+        <button type="submit" id="btnEnviar">ENVIAR</button>
+    </form>
 </body>
 </html>
+
 <script>
-    const cords = { LATI: "-58.4656386135451",
-                     LONG: "-34.6361468117108" }
-
-    const EmbedMap = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4947.118453600879!2d
-    ${cords.LATI}!3d${cords.LONG}!
-    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!
-    4v1693788469644!5m2!1ses-419!2sar" width="600" height="450" border="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
-    
-    const mapaIframe = document.querySelector('div#mapa')
-
-    mapaIframe.innerHTML = EmbedMap
+    // MOVER ESTE SCRIPT AL DOCUMENTO JAVASCRIPT
+    const inputNombre = document.querySelector("#inputNombre")
+    const inputEmail = document.querySelector("#inputEmail")
+    const inputFecha = document.querySelector("#inputFecha")
+    const inputCom = document.querySelector("#inputCom")
+    const btnEnviar = document.querySelector("#btnEnviar")
 </script>

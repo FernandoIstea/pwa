@@ -8,25 +8,21 @@
     <!-- <script defer src="js/navigator.js"></script> -->
 </head>
 <body>
-
     <h1>Navigator</h1>
-    <p><strong>Velocidad de descarga:</strong> <span id="downlink">1</span></p>
-    <p><strong>Tipo de red:</strong> <span id="efftype">4g</span></p>
-    <p><strong>Tipo de conexión:</strong> <span id="type">WIFI</span></p>
-    <p><strong>Reducir Datos:</strong> <span id="savedata">No</span></p>
+    <div id="datos">
+        <p><strong>Velocidad de descarga:</strong> <span id="downlink">N/A</span></p>
+        <p><strong>Tipo de red:</strong> <span id="efftype">N/A</span></p>
+        <p><strong>Tipo de conexión:</strong> <span id="type">N/A</span></p>
+        <p><strong>Reducir Datos:</strong> <span id="savedata">N/A</span></p>
+    </div>
+    <!-- VIDEO  -->
 </body>
 </html>
 
 <script>
+    // MOVER ESTO AL ARCHIVO JAVASCRIPT
     const downlink = document.querySelector("#downlink")
     const effType = document.querySelector("#efftype")
     const type = document.querySelector("#type")
     const saveData = document.querySelector("#savedata")
-
-    function mostrarDatosConexion(navigator) {
-        downlink.textContent = navigator.connection.downlink
-        effType.textContent = navigator.connection.effectiveType
-        type.textContent = navigator.connection.type
-        saveData.textContent = navigator.connection.saveData
-    }
 </script>

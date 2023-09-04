@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Object Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script defer src="js/hardware.js"></script> -->
+</head>
+<body>
+    <h1>Hardware de usuario</h1>
+    <p><strong>Cant. Procesadores: </strong><span id="procesadores"></span></p>
+    <p><strong>Cant. Memoria RAM: </strong><span id="memoria"></span></p>
+    <p><strong>Sistema Operativo: </strong><span id="so"></span></p>
+    <p><strong>Idioma configurado: </strong><span id="idioma"></span></p>
+    <p><strong>maxTouchPoints: </strong><span id="mtp"></span></p>
+    <hr>
+    <h2>Batería</h2>
+    <p><strong>Nivel: </strong><span id="nivel"></span></p>
+    <p><strong>Cargando: </strong><span id="cargando"></span></p>
+</body>
+</html>
+
+<script>
+    // MOVER ESTE SCRIPT AL DOCUMENTO JAVASCRIPT
+    const procesadores = document.querySelector("#procesadores")
+    const memoria = document.querySelector("#memoria")
+    const so = document.querySelector("#so")
+    const idioma = document.querySelector("#idioma")
+    const mtp = document.querySelector("#mtp")
+
+    // BATERIA
+    const nivel = document.querySelector("#nivel")
+    const cargando = document.querySelector("#cargando")
+
+</script>
