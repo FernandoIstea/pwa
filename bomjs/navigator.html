@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NAvigator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script defer src="js/navigator.js"></script> -->
+</head>
+<body>
+
+    <h1>Navigator</h1>
+    <p><strong>Velocidad de descarga:</strong> <span id="downlink">1</span></p>
+    <p><strong>Tipo de red:</strong> <span id="efftype">4g</span></p>
+    <p><strong>Tipo de conexión:</strong> <span id="type">WIFI</span></p>
+    <p><strong>Reducir Datos:</strong> <span id="savedata">No</span></p>
+</body>
+</html>
+
+<script>
+    const downlink = document.querySelector("#downlink")
+    const effType = document.querySelector("#efftype")
+    const type = document.querySelector("#type")
+    const saveData = document.querySelector("#savedata")
+
+    function mostrarDatosConexion(navigator) {
+        downlink.textContent = navigator.connection.downlink
+        effType.textContent = navigator.connection.effectiveType
+        type.textContent = navigator.connection.type
+        saveData.textContent = navigator.connection.saveData
+    }
+</script>
